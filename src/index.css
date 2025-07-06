@@ -1,0 +1,150 @@
+body{
+  background-image: linear-gradient(#588157, #344E41);
+  margin-block-start: 0px;
+  margin-top: 0px;
+}
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  
+  display: grid;
+  grid-template-areas: "header header header" "entry task task";
+  grid-template-rows: 1fr 10fr;
+  height: 100vh;
+}
+
+h1{
+  font-size: 4rem;
+  grid-area: header;
+  color: #DAD7CD;
+  height: fit-content;
+
+}
+
+.to-do-list div {
+  position: sticky;
+}
+
+#input-box {
+  width: 75%;
+}
+
+#task-entry {
+
+  width: 30vw;
+  margin-right: 5vw;
+  grid-area: entry;
+  
+  
+
+
+}
+
+#enter-taskbox {
+  grid-area: task;
+
+}
+
+#to-do-items {
+  
+  width: 50vw;
+  overflow: scroll;
+}
+
+#counter {
+  font-size: 1.7rem;
+  color: #DAD7CD;
+  display: inline-flex;
+  border-radius: 5px;
+  background-color: #588157;
+  width: 100%;
+  height: 4rem;
+}
+
+.counter-name {
+  width: 80%;
+  align-content: center;
+  padding-left: 10px;
+  text-align: left;
+  
+
+}
+
+.counter-value {
+  width: 20%;
+  justify-items: right;
+}
+
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+
+} 
+.add-button{
+  background-color: hsl(125, 47%, 54%);
+  width: 20%;
+
+}
+.add-button:hover{
+  background-color: hsl(125, 47%, 44%);
+}
+
+.complete-button{
+  background-color: hsl(129, 28%, 38%);
+
+}
+.complete-button:hover{
+  background-color: hsl(129, 28%, 28%);
+}
+
+.delete-button{
+  background-color: hsl(10, 90%, 50%);
+
+}
+.delete-button:hover{
+  background-color: hsl(10, 90%, 40%);
+}
+.move-button{
+  background-color: hsl(207, 90%, 64%);
+
+}
+.move-button:hover{
+  background-color: hsl(207, 90%, 54%);
+}
+input[type="text"]{
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+ol{
+    padding: 0;
+}
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #A3B18A;
+    margin-bottom: 10px;
+    border: 3px solid #a3b18a25;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.text{
+    flex: 1;
+}
+.delete-button, .complete-button, .move-button{
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
