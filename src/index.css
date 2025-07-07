@@ -1,5 +1,6 @@
 body{
   background-image: linear-gradient(#588157, #344E41);
+  background-attachment: fixed;
   margin-block-start: 0px;
   margin-top: 0px;
 }
@@ -148,3 +149,152 @@ li{
     font-size: 1.4rem;
     margin-left: 10px;
 }
+
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 440px) {
+  body {
+    margin: 0;
+  }
+
+  .to-do-list{
+    text-align: center;
+    display: block;
+    
+    height: 90vh;
+  }
+
+  .to-do-list h1{
+    font-size: 2.5rem;
+    
+  }
+
+  #task-entry {
+    display: inline;
+
+
+  }
+
+  
+
+  #enter-taskbox {
+    display: flex;
+
+    justify-content: center;
+
+ 
+  }
+
+  #input-box {
+    width: 73vw;
+    font-size: 1rem;
+  }
+
+  #add-button {
+    width: 15vw;
+    font-size: 1rem;
+    height: 3rem;
+  }
+
+  #to-do-items {
+    display: inline;
+    width: 90vw;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+
+  }
+
+  ol {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #A3B18A;
+    margin-bottom: 10px;
+    border: 3px solid #a3b18a25;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .text{
+      flex: 1;
+  }
+  .delete-button, .complete-button{
+      
+      font-size: 1rem;
+      
+      background-color: transparent;
+  }
+
+  .move-button {
+    font-size: .5rem;
+    display: flex;
+    background-color: transparent;
+  }
+  
+
+
+  #counter {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline;
+
+    width: 100vw;
+  }
+
+  #mobile-counter {
+    display: inline-block;
+    top: 10vh;
+    justify-items: center;
+    width: 25%;
+    border: rgba(255, 255, 255, 0.336) 1px solid;
+    text-align: center;
+    height: 4rem;
+    padding-top: 5px;
+  }
+
+  .mobile-positioning {
+    display: flex;
+
+    background-color: #9e9e9e;
+    position: fixed;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 100vw;
+  }
+
+  .counter-name {
+    font-size: .59rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .counter-value {
+
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: center;
+  }
+}
+
